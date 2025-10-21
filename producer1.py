@@ -9,5 +9,5 @@ if __name__=="__main__":
     while 1==1:
         registed_user=get_random_data()
         print(registed_user)
-        producer.send("quickstart",registed_user)
+        producer.send("consumerdemo",registed_user)
         time.sleep(4)
